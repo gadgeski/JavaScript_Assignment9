@@ -1,0 +1,113 @@
+body {
+  width: 100%;
+  background: url(img/Simple_Background-S.png) no-repeat;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+.preview-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+input[type="text"] {
+  padding: 12px;
+  font-size: 1.1em;
+  border: 2px solid #a8d9ff;
+  border-radius: 6px;
+  width: 300px;
+  max-width: 90%;
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+p {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+#previewDisplay {
+  color: #dc3545; /* プレビューテキストを強調 */
+  font-weight: bold;
+  word-wrap: break-word; /* 長い単語がはみ出さないように */
+}
+/*====================================================
+
+Box
+
+====================================================*/
+.box {
+  width: 720px;
+  height: 480px;
+  margin: 13% auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  transition: 0.4s;
+}
+.box::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  transition: 0.4s;
+  transition-delay: 0.5s;
+}
+.box::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  transition: 0.4s;
+  transition-delay: 0.5s;
+}
+.box:hover:before,
+.box:hover::after {
+  width: 100%;
+  height: 100%;
+  border-color: rgba(255, 255, 255, 0.3);
+  transition-delay: 0s;
+}
+.box:hover {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  transition-delay: 0.3s;
+}
