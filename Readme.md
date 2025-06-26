@@ -28,7 +28,7 @@ HTMLはウェブページの骨格を定義します。
 
 <h3>input type="text" id="textInput" placeholder="ここに文字を入力..." /></h3> テキストを入力するための入力フィールドです。id="textInput"が設定されており、JavaScript からこの要素を操作するために使われます。placeholder 属性は、入力がないときに表示されるヒントテキストです。
 
-<h3><p>プレビュー: <span id="previewDisplay"></span></p></h3> 入力されたテキストが表示される部分です。"プレビュー:"というテキストの後に、<span id="previewDisplay"></span>という要素があります。このspan要素の中に、JavaScriptを使って入力されたテキストが表示されます。
+<h3>span id="previewDisplay"</h3> 入力されたテキストが表示される部分です。"プレビュー:"というテキストの後に、span id="previewDisplay"という要素があります。このspan要素の中に、JavaScriptを使って入力されたテキストが表示されます。
 
 <h3>script src="script.js"</h3> script.jsというファイルに書かれたJavaScriptをこのHTMLファイルに読み込みます。これは通常、HTMLの最後に配置され、ページの内容が読み込まれてからスクリプトが実行されるようにします。
 
